@@ -1,0 +1,314 @@
+// 清除浏览器默认样式
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration:none;
+}
+
+// 消除高度塌陷和垂直外边距重叠
+.clearfix{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+// 定义变量存储设计图宽度像素
+@design_width:1080px;
+
+// 设置根元素
+html{
+    //设置rem比值
+    font-size:(100vw/@design_width)*40;
+    background-color:#f8f8f8;
+}
+
+// 设置顶部
+.top{
+    width:(1080/40rem);
+    height:(254/40rem);
+    background-color:#ed6279;
+    h2{
+        color:#fff;
+        position:absolute;
+        left:50%;
+        //居中
+        transform:translateX(-50%);
+        font:(50/40rem) "微软雅黑","宋体";
+        margin-top:(155/40rem);
+    }
+}
+
+// 设置中间左边导航条
+.navLeft{
+    ul{
+        // 开启弹性盒
+        display:flex;
+        flex-flow:column wrap;
+        .navs{
+            display:block;
+            color:#808080;
+            width:(315/40rem);
+            height:(146/40rem);
+            text-align:center;
+            line-height:(146/40rem);
+        }
+        li{
+            width:(315/40rem);
+            position:relative;
+            border-left:(10/40rem) solid transparent;
+        }
+        li:hover{
+            background-color:#fff;
+            border-left:(10/40rem) solid #ed6279;
+        }
+        // 显示展示栏
+        li:hover .show01,
+        li:hover .show02,
+        li:hover .show03,
+        li:hover .show04,
+        li:hover .show05,
+        li:hover .show06,
+        li:hover .show07,
+        li:hover .show08,
+        li:hover .show09,
+        li:hover .show10,
+        li:hover .show11,
+        li:hover .show12,
+        li:hover .show13{
+            width:(@show_width/40rem);
+        }
+    }
+}
+
+// 设置变量存储展示栏宽度
+@show_width:755;
+// 定义一个类清除展示栏超链接继承父类超链接的样式
+// 设置右边展示栏
+.navLeft{
+    .show01{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(0/40rem);
+        padding-bottom:(100/40rem);
+        background-color:#fff;
+    }
+    .show02{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-146/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show03{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-292/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show04{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-438/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show05{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-584/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show06{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-730/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show07{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-876/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show08{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-1022/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show09{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-1168/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show10{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-1314/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show11{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-1460/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show12{
+         // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-1606/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    .show13{
+        // 开启绝对定位
+        position:absolute;
+        width:(@show_width/40rem);
+        left:(314/40rem);
+        top:(-1752/40rem);
+        background-color:#fff;
+        // 隐藏展示栏
+        width: 0;
+        overflow:hidden;
+    }
+    // 设置衣服展示
+    .cloth{
+        // 设置nav
+        nav{
+            // 开启弹性盒
+            display:flex;
+            flex-flow:row wrap;
+        }
+        // 设置图片
+        img{
+            width:(110/40rem);
+            height:(160/40rem);
+        }
+        a{
+            width:(250/40rem);
+            height:(260/40rem);
+            text-align: center;
+            color:#808080;
+            background-color:#fff;
+            box-shadow:0 0 1px rgba(0,0,0,.3);
+        }
+    }
+
+    // 设置模特展示
+    .mode{
+        margin-top:(10/40rem);
+        nav{
+            display:flex;
+            justify-content: space-around;
+            flex-flow:row wrap;
+        }
+        img{
+            width:(354/40rem);
+            height:(529/40rem);
+            border-radius:(18/40rem);
+        }
+        a{
+            width:(354/40rem);
+            text-align: center;
+            margin-bottom:(46/40rem);
+        }
+        // 设置文本
+        p{
+            color:black;
+            span{
+                color:#ed6279;
+            }
+            i{
+                color:skyblue;
+            }
+        }
+    }
+}
+
+// 底部导航
+// 设置底部导航
+.nav{
+    width:100%;
+    height:(125/40rem);
+    position:fixed;
+    bottom:0;
+    background-color:#ffffff;
+    border-top:(1/40rem) solid #d1d1d1;
+    ul{
+        // 开启弹性盒
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+    }
+    li{
+        text-align:center;
+        .fas{
+            color:black;
+            font-size:(50/40rem);
+            margin-top:(12/40rem);
+        }
+        a{
+            color:black;
+            font:(40/40rem) "微软雅黑";
+        }
+    }
+}
+a:hover{
+    background-color:transparent;
+}
